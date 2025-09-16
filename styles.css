@@ -31,35 +31,41 @@ div.post img{
     height: fit-content;
 }
 
-div.post .post-header div:first-child{
-    display: inline-block;
-    width: 80%;
-}
 
-div.post .post-header div:last-child{
-    display: inline-block;
-    width: 20%;
-    padding: 10px;
-    text-align: right;
-    color: gray;
-}
-
-div.post-icons{
-
-    display: inline-block;
+div.post .post-header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+
+div.post .post-header h2{
+    margin: 5 0 0 0;
+}
+
+.post-title {
+  display: flex;             /* coloca el icono y el bloque de texto en fila */
+  align-items: center;       /* centra verticalmente */
+  gap: 10px;                 /* espacio entre el icono y el texto */
+}
+
+.post-title #title-text {
+  display: flex;
+  flex-direction: column;   /* apila el h2 y el p */
+  line-height: 0;         /* mejora el espacio entre ellos */
+}
+
+div.post-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
 
 div.container{
     width: 600px;
     margin: auto;
 }
-
-div.post-header{
-    display: flex;
-}
-
 
 
 div.post-body p{
@@ -71,22 +77,22 @@ div.post-body p{
     font-style: normal;
 }
 
-.ellipsiss{
+#ellipsiss{
     width: 50;
     height: 50;
+    margin: 10 5 0 0;
 }
 
 #icon{
     width: 40;
     height: 40;
     margin-top: 10;
-
 }
 
-div.post-icons #icon:first-of-type{
-    margin-left: 10;
+#perfil{
+    width: 40;
+    height: 40;
+    margin: 0 0 0 10;
 }
 
-div.post-icons #icon:last-child{
-    object-position: right;
-}
+
